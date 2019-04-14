@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "codecov": "codecov -t $CODECOV_TOKEN",
+    "snyk": "snyk test",
     "test": "npm run test:ci",
     "test:ci": "nyc ava --tap | tap-xunit > coverage/junit.xml",
     "test:coverage": "nyc ava"
@@ -27,6 +28,7 @@
     "ava": "1.4.1",
     "codecov": "3.3.0",
     "nyc": "13.3.0",
+    "snyk": "1.150.0",
     "tap-xunit": "2.3.0"
   }
 }
