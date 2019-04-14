@@ -31,11 +31,11 @@ jobs:
       - run: npm test && npm run coverage
 
       - store_artifacts:
-        path: ~/repo/coverage
-        destination: test-coverage
+          path: ~/repo/coverage
+          destination: test-coverage
 
       - store_test_results:
-        path: ~/repo/coverage
+          path: ~/repo/coverage
 
 workflows:
   version: 2
