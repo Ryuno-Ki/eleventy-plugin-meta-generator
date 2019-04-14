@@ -8,10 +8,10 @@ Adds a meta-generator tag to the head of the generated html files
 
 ## Installation
 
-Until it gets published on npm registry, you need to use it like this:
+That's simple!
 
 ```sh
-npm install git+https://github.com/Ryuno-Ki/eleventy-plugin-meta-generator.git
+npm install eleventy-plugin-meta-generator
 ```
 
 ## Usage
