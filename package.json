@@ -19,5 +19,8 @@
   "homepage": "https://github.com/Ryuno-Ki/eleventy-plugin-meta-generator#readme",
   "peerDependencies": {
     "@11ty/eleventy": "0.8.x"
+  },
+  "devDependencies": {
+    "ava": "1.4.1"
   }
 }
