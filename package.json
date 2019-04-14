@@ -4,7 +4,10 @@
   "description": "Adds a meta-generator tag to the head of the generated html files",
   "main": "index.js",
   "scripts": {
-    "test": "ava"
+    "codecov": "codecov -t $CODECOV_TOKEN",
+    "test": "npm run test:ci",
+    "test:ci": "nyc ava --tap | tap-xunit > coverage/junit.xml",
+    "test:coverage": "nyc ava"
   },
   "repository": {
     "type": "git",
@@ -21,6 +24,9 @@
     "@11ty/eleventy": "0.8.x"
   },
   "devDependencies": {
-    "ava": "1.4.1"
+    "ava": "1.4.1",
+    "codecov": "3.3.0",
+    "nyc": "13.3.0",
+    "tap-xunit": "2.3.0"
   }
 }
