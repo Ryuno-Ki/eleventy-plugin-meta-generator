@@ -28,7 +28,7 @@ jobs:
       - run: npm install
 
       # run tests!
-      - run: npm test && npm run coverage
+      - run: npm test && npm run codecov
 
       - store_artifacts:
           path: ~/repo/coverage
