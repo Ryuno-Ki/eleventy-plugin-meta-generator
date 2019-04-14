@@ -7,7 +7,7 @@ jobs:
   build:
     docker:
       # specify the version you desire here
-      - image: circleci/node:7.10
+      - image: circleci/node:10.12
 
     working_directory: ~/repo
 
@@ -28,5 +28,30 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
+  test:
+    docker:
+      # specify the version you desire here
+      - image: circleci/node:10.12
+
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+
+      - run: npm install
+
       # run tests!
-      - run: npm test
+      - run: npm test && npm run coverage
+      - store_artifacts:
+        path: ~/repo/coverage
+        destination: test-coverage
+
+      - store_test_results:
+        path: ~/repo/coverage
+
+workflows:
+  version: 2
+  workflow:
+    jobs:
+      - build
+      - test
