@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Ryuno-Ki/eleventy-plugin-meta-generator/issues"
   },
-  "homepage": "https://github.com/Ryuno-Ki/eleventy-plugin-meta-generator#readme"
+  "homepage": "https://github.com/Ryuno-Ki/eleventy-plugin-meta-generator#readme",
+  "peerDependencies": {
+    "@11ty/eleventy": "0.8.x"
+  }
 }
