@@ -14,8 +14,12 @@
     "type": "git",
     "url": "git+https://github.com/Ryuno-Ki/eleventy-plugin-meta-generator.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "eleventy",
+    "meta tag",
+    "generator"
+  ],
+  "author": "André Jaenisch",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Ryuno-Ki/eleventy-plugin-meta-generator/issues"
