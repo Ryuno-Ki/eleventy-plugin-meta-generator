@@ -1,0 +1,17 @@
+{
+  "check-coverage": true,
+  "per-file": true,
+  "lines": 80,
+  "include": [
+    "src/*js"
+  ],
+  "exclude": [
+    "test/*js"
+  ],
+  "reporter": [
+    "lcov",
+    "html",
+    "text"
+  ],
+  "report-dir": "./coverage"
+}
