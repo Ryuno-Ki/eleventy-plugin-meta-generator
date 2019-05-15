@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "ava": "1.4.1",
-    "codecov": "3.4.0",
+    "codecov": "3.5.0",
     "nyc": "14.1.1",
     "snyk": "1.163.2",
     "tap-xunit": "2.3.0"
