@@ -29,7 +29,7 @@
     "@11ty/eleventy": "0.8.x"
   },
   "devDependencies": {
-    "ava": "1.4.1",
+    "ava": "2.0.0",
     "codecov": "3.5.0",
     "nyc": "14.1.1",
     "snyk": "1.169.0",
