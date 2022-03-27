@@ -16,6 +16,7 @@
   },
   "keywords": [
     "eleventy",
+    "eleventy-plugin",
     "meta tag",
     "generator"
   ],
