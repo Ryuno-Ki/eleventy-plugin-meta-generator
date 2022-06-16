@@ -1,9 +1,6 @@
-const { readFile } = require('fs');
+import { readFile } from 'fs';
 
-
-module.exports = readPackageJson;
-
-function readPackageJson (pathToPackageJson) {
+export function readPackageJson (pathToPackageJson) {
   return new Promise((resolve, reject) => {
     try {
       readFile(pathToPackageJson, 'utf8', (err, content) => {

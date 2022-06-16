@@ -1,8 +1,5 @@
-const { join } = require('path');
+import { join } from 'path';
 
-
-module.exports = getPackageJsonPath;
-
-function getPackageJsonPath () {
+export function getPackageJsonPath () {
   return Promise.resolve(join(process.cwd(), 'package.json'));
 }

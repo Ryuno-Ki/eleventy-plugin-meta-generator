@@ -1,6 +1,4 @@
-module.exports = findEleventyVersion;
-
-function findEleventyVersion (packageJson) {
+export function findEleventyVersion (packageJson) {
   if (packageJson.dependencies && packageJson.dependencies['@11ty/eleventy']) {
     return Promise.resolve(packageJson.dependencies['@11ty/eleventy']);
   }

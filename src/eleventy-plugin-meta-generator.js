@@ -1,8 +1,8 @@
-const findEleventyVersion = require('./find-eleventy-version.js');
-const getPackageJsonPath = require('./get-package-json-path.js');
-const readPackageJson = require('./read-package-json.js');
+import { findEleventyVersion } from './find-eleventy-version.js';
+import { getPackageJsonPath } from './get-package-json-path.js';
+import { readPackageJson } from './read-package-json.js';
 
-const eleventyPluginMetaGenerator = async function eleventyPluginMetaGenerator () {
+export async function eleventyPluginMetaGenerator () {
   try {
     const packageJsonPath = await getPackageJsonPath();
     const packageJson = await readPackageJson(packageJsonPath);
@@ -14,5 +14,3 @@ const eleventyPluginMetaGenerator = async function eleventyPluginMetaGenerator (
     return Promise.resolve(`<meta name="generator" content="Eleventy" />`);
   };
 }
-
-module.exports = eleventyPluginMetaGenerator;
