@@ -2,8 +2,8 @@
 
 [![Known Vulnerabilities](https://snyk.io/test/github/Ryuno-Ki/eleventy-plugin-meta-generator/badge.svg?targetFile=package.json)](https://snyk.io/test/github/Ryuno-Ki/eleventy-plugin-meta-generator?targetFile=package.json)
 
-:alert: Deprecated. Please use [`eleventy.generator`](https://www.11ty.dev/docs/data-eleventy-supplied/#eleventy-variable) instead
-(available 1.0.1 and higher) :alert:
+⚠️ Deprecated. Please use [`eleventy.generator`](https://www.11ty.dev/docs/data-eleventy-supplied/#eleventy-variable) instead
+(available 1.0.1 and higher) :warning:
 
 Adds a meta-generator tag to the head of the generated html files
 
