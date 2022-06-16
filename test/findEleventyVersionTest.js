@@ -1,7 +1,7 @@
 import test from 'ava';
 import { findEleventyVersion } from '../src/find-eleventy-version.js'
 
-const eleventyVersion = '0.8.2';
+const eleventyVersion = '1.0.1';
 
 test('Finds the version of @11ty/eleventy as dependency', async (t) => {
   const version = await findEleventyVersion({
